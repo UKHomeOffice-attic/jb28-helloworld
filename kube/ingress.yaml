@@ -2,12 +2,12 @@
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
-  name: dsp-hello-world-ingress
+  name: helloworld-ingress
 spec:
   rules:
   - http:
       paths:
       - backend:
-          serviceName: dsp-hello-world-service
+          serviceName: helloworld-service
           servicePort: 80
         path: /
